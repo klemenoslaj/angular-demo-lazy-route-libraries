@@ -1,6 +1,7 @@
 {
-  "name": "demo-lazy-route-components",
+  "name": "angular-demo-lazy-route-libraries",
   "version": "0.0.0",
+  "description": "Angular 7 library lazy loading via router - AOT only Workaround",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",

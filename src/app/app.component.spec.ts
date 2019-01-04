@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'demo-lazy-route-components'`, () => {
+  it(`should have as title 'demo-lazy-route-libraries'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
-    expect(app.title).toEqual('demo-lazy-route-components');
+    expect(app.title).toEqual('demo-lazy-route-libraries');
   });
 
   it('should render title in a h1 tag', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('h1').textContent).toContain('Welcome to demo-lazy-route-components!');
+    expect(compiled.querySelector('h1').textContent).toContain('Welcome to demo-lazy-route-libraries!');
   });
 });
