@@ -129,6 +129,41 @@
           }
         }
       }
+    },
+    "lazy-component": {
+      "root": "projects/lazy-component",
+      "sourceRoot": "projects/lazy-component/src",
+      "projectType": "library",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/lazy-component/tsconfig.lib.json",
+            "project": "projects/lazy-component/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/lazy-component/src/test.ts",
+            "tsConfig": "projects/lazy-component/tsconfig.spec.json",
+            "karmaConfig": "projects/lazy-component/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/lazy-component/tsconfig.lib.json",
+              "projects/lazy-component/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "defaultProject": "demo-lazy-route-components"

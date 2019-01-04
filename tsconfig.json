@@ -17,6 +17,14 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "lazy-component": [
+        "dist/lazy-component"
+      ],
+      "lazy-component/*": [
+        "dist/lazy-component/*"
+      ]
+    }
   }
 }
